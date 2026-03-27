@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_SC, Noto_Serif_SC } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
 
 const notoSans = Noto_Sans_SC({
   variable: "--font-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <body className={`${notoSans.variable} ${notoSerif.variable} antialiased`}>
+        <Header />
         {children}
       </body>
     </html>

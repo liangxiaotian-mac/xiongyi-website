@@ -8,6 +8,54 @@
   --accent: #ffe210;
 }
 
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(7, 7, 7, 0.8);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-header__container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo {
+  font-family: "Alimama FangYuanTi", "Alibaba PuHuiTi", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 2px;
+}
+
+.site-header__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.site-header__nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.site-header__nav a:hover {
+  color: var(--ink);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,6 +75,7 @@ img {
 .portfolio-page {
   width: 100%;
   background: #070707;
+  padding-top: 64px;
 }
 
 .section {

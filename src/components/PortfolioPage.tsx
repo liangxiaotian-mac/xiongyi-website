@@ -2,9 +2,9 @@
 
 
 const assets = {
-  heroGlow: "https://www.figma.com/api/mcp/asset/f536ba82-4a64-465d-ab0f-aeeb4f6abc9e",
-  heroCard1: "https://www.figma.com/api/mcp/asset/e4ed8757-4538-478b-af42-55e0b5f8bc6b",
-  heroCard2: "https://www.figma.com/api/mcp/asset/1ce5c3d7-2d15-4433-bbdb-d0daa96a693e",
+  heroGlow: "/figma/hero-bg.png",
+  heroCard1: "/figma/hero-screen-1.png",
+  heroCard2: "/figma/hero-screen-2.png",
   gameGlow: "https://www.figma.com/api/mcp/asset/4ddb6f6a-8cf6-4e02-a6d8-1a49a7488339",
   game1: "https://www.figma.com/api/mcp/asset/a3c3b4be-0539-4ccf-9d59-d87ae87a1380",
   game2: "https://www.figma.com/api/mcp/asset/4f785dd4-bf29-4e0c-a25b-7daa6ee57abb",

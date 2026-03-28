@@ -1,0 +1,363 @@
+.node1048 {
+  width: min(1920px, 100%);
+  margin: 24px auto;
+  padding: 0 clamp(10px, 2vw, 28px) clamp(24px, 3vw, 48px);
+}
+
+.hero {
+  position: relative;
+  min-height: 1214px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: radial-gradient(120% 100% at 80% 0%, #3a0909 0%, #060611 47%, #04050d 100%);
+  display: grid;
+  grid-template-columns: minmax(420px, 58%) minmax(300px, 42%);
+}
+
+.heroBg {
+  position: absolute;
+  top: -340px;
+  left: 180px;
+  width: 1740px;
+  opacity: 0.25;
+  filter: blur(16px);
+}
+
+.heroLeft,
+.heroRight {
+  position: relative;
+  z-index: 2;
+}
+
+.heroLeft {
+  padding: 154px 0 0 64px;
+}
+
+.heroStack {
+  width: min(100%, 1006px);
+  filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.38));
+}
+
+.heroPhoneWrap {
+  position: absolute;
+  left: 52px;
+  top: 242px;
+  width: min(42%, 337px);
+}
+
+.heroPhoneBody {
+  width: 100%;
+  border-radius: 52px;
+}
+
+.heroPhone {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+}
+
+.heroRight {
+  padding: 148px 64px 0 14px;
+  color: #fff;
+}
+
+.heroRight h1 {
+  margin: 0;
+  font-size: clamp(46px, 4.4vw, 84px);
+}
+
+.titleLine {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titleLine span {
+  width: 6px;
+  height: 24px;
+  background: #ffe210;
+}
+
+.titleLine h3 {
+  margin: 0;
+  font-size: clamp(26px, 2.2vw, 36px);
+}
+
+.cardList {
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.glassCard {
+  border-radius: 14px;
+  padding: 16px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(90deg, rgba(124, 124, 124, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.glassCard h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.glassCard p {
+  margin: 10px 0 0;
+  color: #bfbfbf;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.panel {
+  margin-top: 18px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #f6f6fb;
+}
+
+.normSection {
+  padding: 44px clamp(20px, 4vw, 88px);
+  background: #d4dae7;
+}
+
+.normSection h2,
+.textCol h2,
+.dongSection h2 {
+  margin: 0;
+  font-size: clamp(32px, 3.2vw, 62px);
+  color: #2e2e2e;
+}
+
+.tagline {
+  margin: 14px 0 0;
+  color: #2e2e2e;
+  font-size: clamp(16px, 1.9vw, 30px);
+  font-weight: 700;
+}
+
+.normCols {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.normCols h4 {
+  margin: 0;
+  color: #5955ff;
+  font-size: clamp(22px, 1.8vw, 34px);
+}
+
+.normCols p {
+  margin: 10px 0 0;
+  color: #4d5465;
+  line-height: 1.8;
+  font-size: clamp(15px, 1.2vw, 20px);
+}
+
+.laptopStage {
+  margin-top: 24px;
+  position: relative;
+  min-height: 390px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #dfe5f4;
+}
+
+.laptopOuter {
+  position: absolute;
+  right: -120px;
+  bottom: -40px;
+  width: min(80%, 1100px);
+}
+
+.laptopInner {
+  position: absolute;
+  right: 130px;
+  bottom: 120px;
+  width: min(53%, 735px);
+}
+
+.splitSection {
+  padding: 46px clamp(20px, 4vw, 88px);
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(420px, 1.1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.splitSection + .splitSection {
+  border-top: 1px solid rgba(17, 22, 38, 0.08);
+}
+
+.reverse {
+  grid-template-columns: minmax(420px, 1.1fr) minmax(300px, 1fr);
+}
+
+.reverse .textCol {
+  order: 2;
+}
+
+.reverse .visualGrid {
+  order: 1;
+}
+
+.textCol ul {
+  margin: 18px 0 0;
+  padding-left: 22px;
+  color: #50586a;
+}
+
+.textCol li {
+  margin-bottom: 10px;
+  line-height: 1.75;
+  font-size: clamp(15px, 1.2vw, 20px);
+}
+
+.visualGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.visualGrid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(44, 57, 97, 0.12);
+}
+
+.dongSection {
+  position: relative;
+  padding: 54px clamp(20px, 4vw, 88px) 60px;
+  overflow: hidden;
+}
+
+.dongBg {
+  position: absolute;
+  inset: -60px -40px auto;
+  width: calc(100% + 80px);
+  opacity: 0.26;
+  filter: blur(8px);
+}
+
+.dongSection h2,
+.dongSection p,
+.phoneRow {
+  position: relative;
+  z-index: 2;
+}
+
+.dongSection h2 {
+  text-align: center;
+}
+
+.dongSection p {
+  margin: 12px auto 0;
+  text-align: center;
+  color: #4d5465;
+  font-size: clamp(15px, 1.2vw, 20px);
+  width: min(760px, 100%);
+}
+
+.phoneRow {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.phoneItem {
+  position: relative;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.phoneBody,
+.phoneShell {
+  width: 100%;
+}
+
+.phoneShell {
+  position: absolute;
+  inset: 0;
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: 1450px;
+  }
+
+  .heroLeft {
+    padding: 56px 18px 0;
+  }
+
+  .heroPhoneWrap {
+    left: 16px;
+    top: 172px;
+    width: min(42%, 300px);
+  }
+
+  .heroRight {
+    padding: 20px 18px 28px;
+  }
+
+  .normCols,
+  .splitSection,
+  .reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .reverse .textCol,
+  .reverse .visualGrid {
+    order: initial;
+  }
+
+  .laptopStage {
+    min-height: 300px;
+  }
+
+  .laptopOuter {
+    right: -180px;
+    width: min(120%, 860px);
+  }
+
+  .laptopInner {
+    right: 70px;
+    bottom: 90px;
+    width: min(72%, 620px);
+  }
+
+  .phoneRow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .node1048 {
+    margin: 16px auto;
+    padding-inline: 8px;
+  }
+
+  .hero,
+  .panel {
+    border-radius: 24px;
+  }
+
+  .heroPhoneWrap {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-top: 10px;
+    width: min(52%, 260px);
+  }
+
+  .visualGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .phoneRow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

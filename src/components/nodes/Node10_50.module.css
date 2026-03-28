@@ -1,0 +1,181 @@
+.node1050 {
+  width: min(1920px, 100%);
+  margin: 24px auto;
+  padding: 0 clamp(10px, 2vw, 28px) clamp(24px, 3vw, 48px);
+}
+
+.hero {
+  position: relative;
+  min-height: 1280px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #06070f;
+  display: grid;
+  grid-template-columns: minmax(420px, 58%) minmax(320px, 42%);
+}
+
+.heroBg {
+  position: absolute;
+  left: -713px;
+  top: -480px;
+  width: 2633px;
+  opacity: 0.2;
+  filter: blur(14px);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 66% 18%, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0) 42%);
+}
+
+.heroVisual,
+.heroText {
+  position: relative;
+  z-index: 2;
+}
+
+.heroVisual {
+  padding: 160px 0 0 24px;
+}
+
+.backBoard,
+.mainBoard {
+  width: min(96%, 940px);
+  border-radius: 30px;
+  border: 10px solid rgba(255, 255, 255, 0.38);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.45);
+}
+
+.backBoard {
+  margin-left: 46px;
+}
+
+.mainBoard {
+  margin-top: -320px;
+}
+
+.heroText {
+  padding: 360px 64px 0 16px;
+  color: #fff;
+}
+
+.heroText h2 {
+  margin: 0;
+  font-size: clamp(32px, 3.2vw, 52px);
+}
+
+.cardList {
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.textCard {
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(90deg, rgba(124, 124, 124, 0.2), rgba(0, 0, 0, 0.2));
+  padding: 16px 18px;
+}
+
+.textCard h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.textCard ul {
+  margin: 10px 0 0;
+  padding-left: 16px;
+}
+
+.textCard li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.collageWrap {
+  margin-top: 14px;
+  background: #272727;
+  border-radius: 80px;
+  overflow: hidden;
+  padding: 52px 28px 56px;
+}
+
+.collageGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.collageGrid img {
+  width: 100%;
+  border-radius: 20px;
+  transform-origin: center;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: 1460px;
+  }
+
+  .heroVisual {
+    padding: 56px 8px 0;
+  }
+
+  .backBoard {
+    margin-left: 18px;
+  }
+
+  .mainBoard {
+    margin-top: -200px;
+  }
+
+  .heroText {
+    padding: 22px 18px 36px;
+  }
+
+  .collageWrap {
+    border-radius: 30px;
+    padding: 20px 12px 24px;
+  }
+
+  .collageGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 780px) {
+  .node1050 {
+    margin: 16px auto;
+    padding-inline: 8px;
+  }
+
+  .hero {
+    min-height: 1220px;
+    border-radius: 24px;
+  }
+
+  .backBoard,
+  .mainBoard {
+    border-width: 6px;
+    border-radius: 18px;
+  }
+
+  .mainBoard {
+    margin-top: -90px;
+  }
+
+  .textCard h4 {
+    font-size: 18px;
+  }
+
+  .collageGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

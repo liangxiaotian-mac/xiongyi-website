@@ -1,19 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_SC, Noto_Serif_SC } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-
-const notoSans = Noto_Sans_SC({
-  variable: "--font-sans",
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-});
-
-const notoSerif = Noto_Serif_SC({
-  variable: "--font-display",
-  weight: ["400", "500", "600", "700", "900"],
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "熊伊 · 作品集",
@@ -27,10 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={`${notoSans.variable} ${notoSerif.variable} antialiased`}>
-        <Header />
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

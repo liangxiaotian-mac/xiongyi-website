@@ -1,0 +1,357 @@
+.node1047 {
+  width: min(1920px, 100%);
+  margin: 24px auto;
+  padding: 0 clamp(10px, 2vw, 28px) clamp(24px, 3vw, 44px);
+}
+
+.hero {
+  position: relative;
+  min-height: 1280px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #02050f;
+}
+
+.heroBg {
+  position: absolute;
+  inset: -160px -70px auto;
+  width: calc(100% + 140px);
+  height: 1236px;
+  object-fit: cover;
+  opacity: 0.28;
+  mix-blend-mode: hard-light;
+  filter: blur(18px);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 10%, rgba(0, 0, 0, 0.72) 100%);
+}
+
+.hero h2,
+.infoCard,
+.iconCard,
+.devices,
+.progressWrap {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  margin: 0;
+  padding: 188px 0 0 64px;
+  font-size: clamp(44px, 4vw, 84px);
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.infoCard,
+.iconCard {
+  margin-left: 64px;
+  width: min(630px, calc(100% - 84px));
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 24px;
+  background: linear-gradient(90deg, rgba(124, 124, 124, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.infoCard {
+  margin-top: 64px;
+  padding: 20px 22px 24px;
+}
+
+.infoCard h4,
+.iconCard h4 {
+  margin: 0;
+  font-size: clamp(28px, 2.4vw, 40px);
+  color: #fff;
+}
+
+.infoCard h4::before,
+.iconCard h4::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 24px;
+  margin-right: 12px;
+  background: #5e85ff;
+  vertical-align: -2px;
+}
+
+.infoCard p {
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(16px, 1.25vw, 21px);
+  line-height: 1.8;
+}
+
+.iconCard {
+  margin-top: 24px;
+  padding: 16px 20px 20px;
+}
+
+.iconGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 16px 10px;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.iconItem img {
+  width: 50px;
+  height: 50px;
+}
+
+.iconItem span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  white-space: nowrap;
+}
+
+.devices {
+  position: absolute;
+  right: 36px;
+  top: 178px;
+  width: min(61%, 1180px);
+  min-height: 940px;
+}
+
+.desktopShell {
+  position: absolute;
+  inset: 0 0 auto;
+  width: 100%;
+}
+
+.desktopScreen {
+  position: absolute;
+  left: 13%;
+  top: 18%;
+  width: 73%;
+}
+
+.phoneWrap {
+  position: absolute;
+  right: 0;
+  top: 2%;
+  width: min(30%, 336px);
+}
+
+.phoneShell {
+  width: 100%;
+}
+
+.phoneBottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.progressWrap {
+  position: absolute;
+  left: 64px;
+  bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.progressWrap span {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.progressBar {
+  width: min(454px, 70vw);
+  height: 13px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px;
+}
+
+.progressBar i {
+  display: block;
+  width: 33%;
+  height: 100%;
+  border-radius: 6px;
+  background: #5e85ff;
+}
+
+.panel {
+  margin-top: 18px;
+  background: #d9dee9;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.contentSection {
+  padding: 54px clamp(20px, 4vw, 92px);
+  display: grid;
+  grid-template-columns: minmax(300px, 620px) minmax(300px, 1fr);
+  gap: clamp(20px, 3vw, 56px);
+  align-items: center;
+}
+
+.contentSection + .contentSection {
+  border-top: 1px solid rgba(28, 35, 55, 0.09);
+}
+
+.reverse {
+  grid-template-columns: minmax(300px, 1fr) minmax(300px, 620px);
+}
+
+.reverse .sectionText {
+  order: 2;
+}
+
+.reverse .sectionVisualWrap {
+  order: 1;
+}
+
+.blockTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bracket {
+  font-size: 38px;
+  color: #2e2e2e;
+  line-height: 1;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 999px;
+  background: #2e2e2e;
+}
+
+.blockTitle h3 {
+  margin: 0;
+  font-size: clamp(27px, 3vw, 54px);
+  color: #2e2e2e;
+  line-height: 1.2;
+}
+
+.blockTitle strong {
+  color: #5955ff;
+}
+
+.sectionText p {
+  margin: 26px 0 0;
+  color: #3e4556;
+  font-size: clamp(16px, 1.45vw, 24px);
+  line-height: 1.9;
+}
+
+.sectionVisualWrap {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(62, 78, 123, 0.16);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.sectionVisual {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    min-height: 1680px;
+  }
+
+  .hero h2 {
+    padding-top: 52px;
+  }
+
+  .devices {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: min(100%, 980px);
+    margin: 28px auto 0;
+    min-height: 760px;
+  }
+
+  .progressWrap {
+    left: 64px;
+    bottom: 24px;
+  }
+
+  .iconGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .contentSection,
+  .reverse {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .reverse .sectionText,
+  .reverse .sectionVisualWrap {
+    order: initial;
+  }
+}
+
+@media (max-width: 780px) {
+  .node1047 {
+    margin: 16px auto;
+    padding-inline: 8px;
+  }
+
+  .hero,
+  .panel {
+    border-radius: 24px;
+  }
+
+  .hero h2,
+  .infoCard,
+  .iconCard,
+  .progressWrap {
+    margin-left: 16px;
+  }
+
+  .hero h2 {
+    padding-inline: 0;
+    font-size: clamp(34px, 11vw, 54px);
+  }
+
+  .infoCard,
+  .iconCard {
+    width: calc(100% - 32px);
+  }
+
+  .iconGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .devices {
+    min-height: 520px;
+    width: 100%;
+  }
+
+  .progressWrap {
+    bottom: 16px;
+  }
+
+  .progressWrap span {
+    font-size: 28px;
+  }
+
+  .bracket {
+    font-size: 30px;
+  }
+}
